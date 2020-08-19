@@ -1,0 +1,40 @@
+@import 'variables';
+
+.faq {
+    @include flexAlign(center, center);
+    @include flexFlow(column);
+    background: img('bg-faq.jpg') no-repeat;
+    background-size: cover;
+
+    h4 {
+        color: $white1;
+        padding: .65em 0;
+        letter-spacing: $letterSpacing;
+    }
+
+    p {
+        color: $white2;
+    }
+
+    .questions {
+        @include flexAlign(center, baseline);
+
+        .question {
+            padding: 1em;   
+
+            .title {
+                color: $white1;
+                font-size: 1em;
+                margin: 1em 0;
+                letter-spacing: $letterSpacing;
+                line-height  : 1.5em;
+                text-transform: uppercase;
+            }
+
+            .answer {
+                color: $white2;
+                line-height  : 1.25em;
+            }
+        }
+    }
+}

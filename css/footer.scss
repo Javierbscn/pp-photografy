@@ -1,0 +1,13 @@
+@import 'variables';
+
+.footer{
+    @include flexAlign(center, center);
+    padding: 2.5em;
+    background: $textHeader;
+
+    p{
+        color: $white1;
+        font-size: 1em;
+        
+    }    
+}

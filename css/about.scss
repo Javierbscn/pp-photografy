@@ -1,0 +1,45 @@
+@import 'variables';
+
+.about {
+    @include flexAlign(center, center);
+    @include flexFlow(row);
+    padding: 5em 0;
+
+    .information {
+        @include flexAlign(space-between, center);
+        @include flexFlow(column);
+
+        h4 {
+            color      : $textHeader;
+            align-self : flex-start;
+            margin     : .7em 0;
+            font-size  : 3em;
+            letter-spacing: $letterSpacing;
+        }
+
+        p {
+            color        : $textParagraph;
+            font-size    : 1.1em;
+            line-height  : 1.5em;
+            margin-bottom: 2em;
+        }
+
+        .more-information {
+            padding      : .8em 2em;
+            color        : $textParagraph;
+            font-size    : .9em;
+            cursor       : pointer;
+            background   : transparent;
+            border       : 1px solid $textParagraph;
+            border-radius: $borderRadius;
+            box-shadow   : $boxShadow3;
+            transition   : all .3s;
+
+            &:hover {
+                color : $blue;
+                border: 1px solid $blue;
+                transform: scale(1.1, 1.1);
+            }
+        }
+    }
+}

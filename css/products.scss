@@ -1,0 +1,100 @@
+@import 'variables';
+
+#products,
+.wrap,
+.product-data,
+.product-buy {
+    @include flexAlign(center, center)
+}
+
+#products {
+    @include flexFlow(column);
+    padding   : 1.5em 0;
+    background: $white2;
+
+    h2 {
+        color      : $textHeader;
+        font-size  : 4em;
+        letter-spacing: $letterSpacing;
+    }
+
+    p {
+        color  : $textParagraph;
+        padding: 1em 0;
+    }
+
+    .wrap {
+        @include flexFlow(row);
+        margin: 1em 0;
+
+
+        .product {
+            width        : 25%;
+            padding      : .75em;
+            margin       : .75em;
+            background   : $white1;
+            border-radius: $borderRadius;
+            box-shadow   : $boxShadow1 inset;
+
+            img {
+                width        : 100%;
+                border-radius: $borderRadius;
+            }
+
+            .wrap {
+                .product-data {
+                    @include flexFlow(column);
+                    align-items: stretch;
+
+                    h3 {
+                        font-family: 'Ubuntu';
+                        display: inline-block;
+                    }
+                }
+
+                .product-buy {
+                    @include flexFlow(column);
+
+                    .price {
+                        color    : $textParagraph;
+                        padding  : 0;
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .buy-button {
+                padding       : 1em;
+                margin        : 1em;
+                color         : $blue;
+                cursor        : pointer;
+                border        : 1px solid $blue;
+                border-radius : $borderRadius;
+                background    : $white1;
+                text-transform: uppercase;
+                transition    : all .3s;
+
+                &:hover {
+                    background: $blue;
+                    color     : $white1;
+                }
+            }
+        }
+
+    }
+
+    .more-products {
+        display      : inline-block;
+        color        : $white1;
+        font-size    : 1.1em;
+        background   : $blue;
+        padding      : .5em 1.5em;
+        border-radius: $borderRadius;
+        ;
+        transition: transform .3s;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+        }
+    }
+}

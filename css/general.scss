@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src        : url('fonts/Ubuntu-Regular.ttf');
+    src        : url('fonts/Ubuntu-Regular.ttf') format("truetype"),
+        url('fonts/Ubuntu-Bold.ttf') format("truetype");
+    font-weight: normal;
+    font-style : normal;
+}
+
+@font-face {
+    font-family: 'Squada';
+    src        : url('fonts/SquadaOne-Regular.ttf');
+    src        : url('fonts/SquadaOne-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style : normal;
+}
+
+* {
+    margin         : 0;
+    padding        : 0;
+    outline        : none;
+    text-decoration: none;
+    list-style     : none;
+    font-family    : 'Ubuntu', 'Helvetica Neue', 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Squada';
+}

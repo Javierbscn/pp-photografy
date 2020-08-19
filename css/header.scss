@@ -1,0 +1,27 @@
+@import 'variables';
+
+.header {
+    @include flexAlign(space-between, center);
+    @include flexFlow(row);
+    padding   : .75em 3.5em;
+    position  : fixed;
+    width     : 100vw;
+    box-sizing: border-box;
+    background: $white1;
+    z-index   : 10;
+
+    .menu {
+        @include flexAlign(center, center);
+        @include flexFlow(row);
+
+        a {
+            padding   : .7em;
+            color     : $textHeader;
+            transition: all .3s;
+        }
+
+        a:hover {
+            color: $blue;
+        }
+    }
+}

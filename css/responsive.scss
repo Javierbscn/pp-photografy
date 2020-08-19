@@ -1,0 +1,324 @@
+@import 'variables';
+
+@media (min-width: 320px) {
+    .header {
+        @include flexFlow(column);
+        width   : 100vw;
+        padding : 1em;
+        position: initial;
+
+        .menu {
+            a {
+                display: inline-block;
+            }
+        }
+    }
+
+    .banner {
+        .cta {
+            padding: 2em .5em;
+
+            h1 {
+                font-size: 3em;
+            }
+
+            p {
+                width: 80%;
+            }
+        }
+
+        .cards {
+            .card {
+                width: 90vw;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    #products {
+        h2 {
+            font-size: 3em;
+        }
+
+        &>p {
+            padding: 1.1em;
+        }
+
+        .wrap {
+            @include flexFlow(column);
+
+            .product {
+                width: 80vw;
+
+                .wrap {
+                    @include flexFlow(row);
+                }
+            }
+        }
+
+        .more-products {
+            align-self: center;
+        }
+    }
+
+    .about {
+        @include flexFlow(column);
+        padding: 3em 0;
+
+        .information {
+            width  : 80vw;
+            padding: 0;
+        }
+    }
+
+    .faq {
+        padding: 1.2em;
+
+        h4 {
+            font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+
+        .questions {
+            @include flexFlow(column);
+            margin: .5em;
+
+            .question {
+                width: 75vw;
+            }
+        }
+    }
+
+    iframe {
+        width : 90vw;
+        height: 60vh;
+    }
+
+    .contact {
+        @include flexFlow(column);
+        padding: 1.5em 0;
+
+        .contact-data {
+            @include flexAlign(center, center);
+            width  : 90vw;
+            padding: 1em 0;
+
+            h4 {
+                font-size: 2.5em;
+            }
+
+            .container {
+                @include flexAlign(center, center);
+                @include flexFlow(column);
+
+                h5 {
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 768px) {
+    .banner {
+        .cta {
+            padding: 3em .5em;
+        }
+
+        .cards {
+            .card {
+                width: 80vw;
+            }
+        }
+    }
+
+    #products {
+        h2 {
+            font-size: 3.5em;
+        }
+
+        .wrap {
+            @include flexFlow(row);
+
+            .product {
+                width: 40vw;
+            }
+        }
+    }
+
+    .faq {
+        padding: 1.75em;
+    }
+
+    iframe {
+        width : 85vw;
+        height: 70vh;
+    }
+
+    .contact {
+        padding: 2.5em 0;
+
+        .contact-data {
+            width  : 90vw;
+            padding: 1em 0;
+
+            h4 {
+                font-size: 3.5em;
+            }
+
+            .container {
+                @include flexAlign(space-around, baseline);
+                @include flexFlow(row);
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .header {
+        @include flexAlign(space-between, center);
+        @include flexFlow(row);
+        padding : .75em 3.5em;
+        position: fixed;
+    }
+
+    .banner {
+        .cta {
+            padding: 6em 2em;
+
+            p {
+                width: 60%;
+            }
+        }
+
+        .cards {
+            @include flexAlign(center, baseline);
+
+            .card {
+                width: 30vw;
+            }
+        }
+    }
+
+    iframe {
+        width : 80vw;
+        height: 80vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner {
+        .cta {
+            padding: 8.75em 3em;
+
+            h1 {
+                font-size: 3.5em;
+            }
+
+            p {
+                width: 60%;
+            }
+        }
+
+        .cards {
+            .card {
+                width: 360px;
+            }
+        }
+    }
+
+    #products {
+        h2 {
+            font-size: 4em;
+        }
+
+        p {
+            padding: 1em 0;
+        }
+
+        .wrap {
+            .product {
+                width: 25%;
+
+                .wrap {
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+
+    .about {
+        @include flexFlow(row);
+        padding: 5em 0;
+
+        iframe {
+            width : 560px;
+            height: 320px;
+        }
+
+        .information {
+            width  : 40%;
+            padding: .5em 0 0 2.7em;
+        }
+    }
+
+    .faq {
+        padding: 2.5em;
+
+        h4 {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 1.1em;
+        }
+
+        .questions {
+            @include flexFlow(row);
+            margin: 2.5em;
+
+            .question {
+                width: 40%;
+            }
+        }
+    }
+
+    .contact {
+        @include flexFlow(row);
+        padding: 3.5em 0;
+
+        .map {
+            iframe {
+                width : 500px;
+                height: 450px;
+            }
+        }
+
+        .contact-data {
+            @include flexAlign(flex-start, center);
+            @include flexFlow(column);
+            width  : 45%;
+            padding: 1em 0;
+
+            h4 {
+                font-size: 4em;
+            }
+
+            .container {
+                @include flexAlign(space-around, baseline);
+                @include flexFlow(row);
+
+                h5 {
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+}
