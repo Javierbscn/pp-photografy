@@ -1,5 +1,3 @@
-@import 'variables';
-
 .header {
     @include flexAlign(space-between, center);
     @include flexFlow(row);

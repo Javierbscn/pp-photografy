@@ -1,5 +1,3 @@
-@import 'variables';
-
 .about {
     @include flexAlign(center, center);
     @include flexFlow(row);

@@ -1,0 +1,13 @@
+@function img($file) {
+    @return url('../img/'+ $file);
+}
+
+@mixin flexAlign($jcontent, $alcontent) {
+    display        : flex;
+    justify-content: $jcontent;
+    align-items    : $alcontent;
+}
+
+@mixin flexFlow($direction) {
+    flex-flow: $direction wrap;
+}

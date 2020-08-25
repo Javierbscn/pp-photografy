@@ -1,0 +1,28 @@
+// Variables
+:root {
+    --white1       : #fff;
+    --white2       : #f2f2f2;
+    --boxShadow1   : 0 0 5px 3px #ddd;
+    --boxShadow2   : 0 0 5px 3px #ccc;
+    --boxShadow3   : 0 0 3px 0 #dedede;
+    --borderRadius : 5px;
+    --black        : #000;
+    --blue         : rgba(74, 198, 223, 0.94);
+    --letterSpacing: 1px;
+    --textHeader   : #444;
+    --textParagraph: #696969;
+    --opacity      : .4;
+}
+
+$white1       : var(--white1);
+$white2       : var(--white2);
+$boxShadow1   : var(--boxShadow1);
+$boxShadow2   : var(--boxShadow2);
+$boxShadow3   : var(--boxShadow3);
+$borderRadius : var(--borderRadius);
+$black        : var(--black);
+$blue         : var(--blue);
+$letterSpacing: var(--letterSpacing);
+$textHeader   : var(--textHeader);
+$textParagraph: var(--textParagraph);
+$opacity      : var(--opacity);
