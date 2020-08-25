@@ -1,0 +1,17 @@
+// Base
+@import 'config/variables';
+@import 'config/mixins';
+@import 'config/fonts';
+@import 'config/normalize';
+
+// Blocks
+@import 'blocks/header';
+@import 'blocks/banner';
+@import 'blocks/products';
+@import 'blocks/about';
+@import 'blocks/faq';
+@import 'blocks/contact';
+@import 'blocks/footer';
+
+// Details
+@import 'details/responsive';
