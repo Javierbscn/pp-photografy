@@ -1,0 +1,51 @@
+#container {
+    width     : 95%;
+    margin-top: 100px;
+    right     : 0;
+    grid-area : products;
+
+    form {
+        @include flexAlign(center, center);
+
+        .search-bar {
+            width        : 50vw;
+            height       : 2.5rem;
+            line-height  : 2.5rem;
+            margin       : .5rem;
+            background   : $searchBar;
+            padding      : 0 1.25rem;
+            border-radius: $borderRadius;
+            border       : none;
+            text-align   : center;
+            font-size    : 1rem;
+        }
+    }
+
+    .grid {
+        position  : relative;
+        width     : 100%;
+        opacity   : 0;
+        transition: all .5s linear 1s;
+
+        &.img-charged {
+            opacity: 1;
+        }
+
+        .item {
+            position: absolute;
+            display : block;
+            width   : calc(30.75% - 1.5rem);
+
+            .item-content {
+                position: relative;
+            }
+
+            img {
+                width         : 100%;
+                cursor        : pointer;
+                vertical-align: top;
+                border-radius : $borderRadius;
+            }
+        }
+    }
+}

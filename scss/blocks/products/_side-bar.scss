@@ -1,0 +1,32 @@
+.side-bar {
+    @include flexAlign(flex-start, center);
+    @include flexFlow(column);
+    grid-area: sidebar;
+    margin-top: 6.25em;
+
+    h5 {
+        display: inline-block;
+        font-size: 1.75rem;
+        padding: 1rem ;
+        border-bottom: 1px solid $categoryColor;
+        position: relative;
+    }
+
+    .category {
+        @include flexAlign(center, center);
+        @include flexFlow(column);
+        position: relative;
+        padding: 1rem 0;
+
+        a {
+            color      : $categoryColor;
+            margin     : .625rem 1.25rem;
+            font-size  : 1.125rem;
+            font-weight: bold;
+
+            &.active {
+                color: $blue;
+            }
+        }
+    }
+}

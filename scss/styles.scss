@@ -5,13 +5,18 @@
 @import 'config/normalize';
 
 // Blocks
-@import 'blocks/header';
-@import 'blocks/banner';
-@import 'blocks/products';
-@import 'blocks/about';
-@import 'blocks/faq';
-@import 'blocks/contact';
-@import 'blocks/footer';
+// index styles
+@import 'blocks/index/header';
+@import 'blocks/index/banner';
+@import 'blocks/index/products';
+@import 'blocks/index/about';
+@import 'blocks/index/faq';
+@import 'blocks/index/contact';
+@import 'blocks/index/footer';
+// products styles
+@import 'blocks/products/grid-container';
+@import 'blocks/products/section-products';
+@import 'blocks/products/side-bar';
 
 // Details
 @import 'details/responsive';

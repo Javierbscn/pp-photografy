@@ -1,0 +1,6 @@
+#grid-container{
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 'sidebar products';
+}
