@@ -1,6 +1,19 @@
-#grid-container{
-    display: grid;
-    grid-template-columns: 25% 1fr;
+#grid-container {
+    display           : grid;
     grid-template-rows: auto auto;
-    grid-template-areas: 'sidebar products';
+}
+
+@media (min-width: 320px) {
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas  : 'sidebar'
+                               'products';
+    }
+}
+
+@media (min-width: 768px) {
+    #grid-container {
+        grid-template-columns: 25% 1fr;
+        grid-template-areas  : 'sidebar products';
+    }
 }

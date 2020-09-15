@@ -2,21 +2,18 @@
     @include flexAlign(flex-start, center);
     @include flexFlow(column);
     grid-area: sidebar;
-    margin-top: 6.25em;
 
     h5 {
-        display: inline-block;
-        font-size: 1.75rem;
-        padding: 1rem ;
+        display      : block;
+        font-size    : 1.75rem;
+        padding      : 1rem;
         border-bottom: 1px solid $categoryColor;
-        position: relative;
     }
 
     .category {
         @include flexAlign(center, center);
-        @include flexFlow(column);
-        position: relative;
-        padding: 1rem 0;
+        padding   : 1rem 0;
+        text-align: center;
 
         a {
             color      : $categoryColor;
@@ -28,5 +25,29 @@
                 color: $blue;
             }
         }
+    }
+}
+
+@media (min-width: 320px) {
+    .side-bar {
+        margin-top: 1em;
+
+        h5 {border-top: 1px solid $categoryColor;}
+
+        .category {@include flexFlow(row);}
+    }
+}
+
+@media (min-width: 768px) {
+    .side-bar {
+        h5 {border-top: none;}
+
+        .category {@include flexFlow(column);}
+    }
+}
+
+@media (min-width: 992px) {
+    .side-bar {
+        margin-top: 12.5em;
     }
 }

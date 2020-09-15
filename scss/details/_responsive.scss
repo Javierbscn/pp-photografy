@@ -6,9 +6,7 @@
         position: initial;
 
         .menu {
-            a {
-                display: inline-block;
-            }
+            a {display: inline-block;}
         }
     }
 
@@ -16,34 +14,24 @@
         .cta {
             padding: 2em .5em;
 
-            h1 {
-                font-size: 3em;
-            }
+            h1 {font-size: 3em;}
 
-            p {
-                width: 80%;
-            }
+            p {width: 80%;}
         }
 
         .cards {
             .card {
                 width: 90vw;
 
-                img {
-                    width: 100%;
-                }
+                img {width: 100%;}
             }
         }
     }
 
     #products {
-        h2 {
-            font-size: 3em;
-        }
+        h2 {font-size: 3em;}
 
-        &>p {
-            padding: 1.1em;
-        }
+        &>p {padding: 1.1em;}
 
         .wrap {
             @include flexFlow(column);
@@ -51,15 +39,11 @@
             .product {
                 width: 80vw;
 
-                .wrap {
-                    @include flexFlow(row);
-                }
+                .wrap {@include flexFlow(row);}
             }
         }
 
-        .more-products {
-            align-self: center;
-        }
+        .more-products {align-self: center;}
     }
 
     .about {
@@ -75,21 +59,15 @@
     .faq {
         padding: 1.2em;
 
-        h4 {
-            font-size: 2.5em;
-        }
+        h4 {font-size: 2.5em;}
 
-        p {
-            font-size: 1em;
-        }
+        p {font-size: 1em;}
 
         .questions {
             @include flexFlow(column);
             margin: .5em;
 
-            .question {
-                width: 75vw;
-            }
+            .question {width: 75vw;}
         }
     }
 
@@ -107,53 +85,38 @@
             width  : 90vw;
             padding: 1em 0;
 
-            h4 {
-                font-size: 2.5em;
-            }
+            h4 {font-size: 2.5em;}
 
             .container {
                 @include flexAlign(center, center);
                 @include flexFlow(column);
 
-                h5 {
-                    text-align: center;
-                }
+                h5 {text-align: center;}
             }
         }
     }
-
 }
 
 @media (min-width: 768px) {
     .banner {
-        .cta {
-            padding: 3em .5em;
-        }
+        .cta {padding: 3em .5em;}
 
         .cards {
-            .card {
-                width: 80vw;
-            }
+            .card {width: 80vw;}
         }
     }
 
     #products {
-        h2 {
-            font-size: 3.5em;
-        }
+        h2 {font-size: 3.5em;}
 
         .wrap {
             @include flexFlow(row);
 
-            .product {
-                width: 40vw;
-            }
+            .product {width: 40vw;}
         }
     }
 
-    .faq {
-        padding: 1.75em;
-    }
+    .faq {padding: 1.75em;}
 
     iframe {
         width : 85vw;
@@ -167,9 +130,7 @@
             width  : 90vw;
             padding: 1em 0;
 
-            h4 {
-                font-size: 3.5em;
-            }
+            h4 {font-size: 3.5em;}
 
             .container {
                 @include flexAlign(space-around, baseline);
@@ -191,17 +152,13 @@
         .cta {
             padding: 6em 2em;
 
-            p {
-                width: 60%;
-            }
+            p {width: 60%;}
         }
 
         .cards {
             @include flexAlign(center, baseline);
 
-            .card {
-                width: 30vw;
-            }
+            .card {width: 30vw;}
         }
     }
 
@@ -216,38 +173,26 @@
         .cta {
             padding: 8.75em 3em;
 
-            h1 {
-                font-size: 3.5em;
-            }
+            h1 {font-size: 3.5em;}
 
-            p {
-                width: 60%;
-            }
+            p {width: 60%;}
         }
 
         .cards {
-            .card {
-                width: 360px;
-            }
+            .card {width: 360px;}
         }
     }
 
     #products {
-        h2 {
-            font-size: 4em;
-        }
+        h2 {font-size: 4em;}
 
-        p {
-            padding: 1em 0;
-        }
+        p {padding: 1em 0;}
 
         .wrap {
             .product {
                 width: 25%;
 
-                .wrap {
-                    justify-content: space-between;
-                }
+                .wrap {justify-content: space-between;}
             }
         }
     }
@@ -270,21 +215,15 @@
     .faq {
         padding: 2.5em;
 
-        h4 {
-            font-size: 3em;
-        }
+        h4 {font-size: 3em;}
 
-        p {
-            font-size: 1.1em;
-        }
+        p {font-size: 1.1em;}
 
         .questions {
             @include flexFlow(row);
             margin: 2.5em;
 
-            .question {
-                width: 40%;
-            }
+            .question {width: 40%;}
         }
     }
 
@@ -305,17 +244,13 @@
             width  : 45%;
             padding: 1em 0;
 
-            h4 {
-                font-size: 4em;
-            }
+            h4 {font-size: 4em;}
 
             .container {
                 @include flexAlign(space-around, baseline);
                 @include flexFlow(row);
 
-                h5 {
-                    font-size: 1.2em;
-                }
+                h5 {font-size: 1.2em;}
             }
         }
     }

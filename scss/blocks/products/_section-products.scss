@@ -1,7 +1,4 @@
 #container {
-    width     : 95%;
-    margin-top: 100px;
-    right     : 0;
     grid-area : products;
 
     form {
@@ -34,7 +31,6 @@
         .item {
             position: absolute;
             display : block;
-            width   : calc(30.75% - 1.5rem);
 
             .item-content {
                 position: relative;
@@ -46,6 +42,48 @@
                 vertical-align: top;
                 border-radius : $borderRadius;
             }
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    #container {
+        width     : 100%;
+        margin-top: .5rem;
+
+        form {
+            .search-bar {width: 80vw;}
+        }
+
+        .grid {
+            .item {width: calc(43% - 2em);}
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #container {
+        form {
+
+            .search-bar {width: 60vw;}
+        }
+
+        .grid {
+            .item {width: calc(45% - 1.5em);}
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    #container {
+        margin-top: 6.25em;
+
+        form {
+            .search-bar {width: 67vw;}
+        }
+
+        .grid {
+            .item {width: calc(30% - 1.5rem);}
         }
     }
 }
