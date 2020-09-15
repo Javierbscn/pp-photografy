@@ -48,7 +48,7 @@
 
     .about {
         @include flexFlow(column);
-        padding: 3em 0;
+        padding: 3em 0 0;
 
         .information {
             width  : 80vw;
@@ -56,8 +56,9 @@
         }
     }
 
-    .faq {
+    #faq {
         padding: 1.2em;
+        margin: 5em 0 0;
 
         h4 {font-size: 2.5em;}
 
@@ -116,7 +117,7 @@
         }
     }
 
-    .faq {padding: 1.75em;}
+    #faq {padding: 1.75em;}
 
     iframe {
         width : 85vw;
@@ -199,7 +200,7 @@
 
     .about {
         @include flexFlow(row);
-        padding: 5em 0;
+        padding: 5em 0 0;
 
         iframe {
             width : 560px;
@@ -212,7 +213,7 @@
         }
     }
 
-    .faq {
+    #faq {
         padding: 2.5em;
 
         h4 {font-size: 3em;}
