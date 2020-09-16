@@ -1,0 +1,41 @@
+#about-cta.contact {
+    background   : $textHeader;
+    border-bottom: 1px solid $white2;
+    text-align   : center;
+
+    .contact-data {
+        padding: 0;
+
+        h4 {
+            font-size  : 2.5rem;
+            font-weight: normal;
+            margin     : 0;
+            color      : $white1;
+        }
+
+        .container {
+            .data {
+                padding: 0;
+                img {width: 35px;}
+            }
+        }
+    }
+    
+    p {
+        color: $white1;
+        a {
+            color          : $white1;
+            text-decoration: underline;
+            &:hover {color: $blue;}
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    #about-cta.contact {
+        &>p {padding: 1rem;}
+    }
+}
+@media (min-width: 992px) {
+    #about-cta.contact {padding: .5rem 0 0;}
+}

@@ -1,0 +1,108 @@
+#form-area {
+    @include flexAlign(space-around, center);
+    @include flexFlow(row);
+    margin-bottom: 1rem;
+
+    .wrap-flex {
+        @include flexAlign(flex-start, center);
+        @include flexFlow(column);
+
+        h5 {
+            font-size     : 1.5rem;
+            color         : $textHeader;
+            letter-spacing: $letterSpacing;
+        }
+
+        form {
+            @include flexAlign(center, center);
+            @include flexFlow(row);
+
+            input,
+            textarea,
+            #btn-form {
+                width        : 100%;
+                padding      : .75rem;
+                margin       : 1rem 0 .25rem;
+                font-size    : 1rem;
+                border-radius: $borderRadius;
+                border       : none;
+                box-shadow   : 0 0 3px 2px $blue inset;
+            }
+
+            textarea{resize: none;}
+
+            #btn-form {
+                padding       : 1rem;
+                color         : $textHeader;
+                cursor        : pointer;
+                border        : 1px solid $textHeader;
+                box-shadow    : none;
+                background    : transparent;
+                text-transform: uppercase;
+                transition    : all .3s;
+
+                &:hover {
+                    background: $blue;
+                    color     : $white1;
+                    border    : 1px solid $blue;
+                }
+            }
+
+            .form-info {
+                width     : 100%;
+                text-align: center;
+                color     : $categoryColor;
+            }
+
+            .error {
+                box-shadow: 0 0 3px 2px $errorForm inset;
+            }
+            
+            label.error {
+                color     : $errorForm;
+                font-size : .875rem;
+                border    : none;
+                box-shadow: none;
+            }
+        }
+
+        img {
+            border-radius: $borderRadius;
+            margin       : 1rem 0;
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    #form-area {
+        .wrap-flex {
+            form, img {width: 80vw;}
+            form{
+                .form-info {font-size: 1rem;}
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    #form-area {
+        .wrap-flex {
+            h5 {font-size: 2rem;}
+            form {
+                #btn-form {width: 75%;}
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .mt-2 {margin-top: 4rem;}
+    #form-area {
+        .wrap-flex {
+            form, img {width: 40vw;}
+            form {
+                .form-info {font-size: .75rem;}
+            }
+        }
+    }
+}
