@@ -1,18 +1,18 @@
-#products,
+.products,
 .wrap,
 .product-data,
 .product-buy {
     @include flexAlign(center, center)
 }
 
-#products {
+.products {
     @include flexFlow(column);
     padding   : 1.5em 0;
     background: $white2;
 
     h2 {
-        color      : $textHeader;
-        font-size  : 4em;
+        font-size     : 4em;
+        color         : $textHeader;
         letter-spacing: $letterSpacing;
     }
 
@@ -24,7 +24,6 @@
     .wrap {
         @include flexFlow(row);
         margin: 1em 0;
-
 
         .product {
             width        : 25%;
@@ -46,7 +45,7 @@
 
                     h3 {
                         font-family: 'Ubuntu';
-                        display: inline-block;
+                        display    : inline-block;
                     }
                 }
 

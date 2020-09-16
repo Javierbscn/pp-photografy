@@ -1,0 +1,53 @@
+.side-bar {
+    @include flexAlign(flex-start, center);
+    @include flexFlow(column);
+    grid-area: sidebar;
+
+    h5 {
+        display      : block;
+        font-size    : 1.75rem;
+        padding      : 1rem;
+        border-bottom: 1px solid $categoryColor;
+    }
+
+    .category {
+        @include flexAlign(center, center);
+        padding   : 1rem 0;
+        text-align: center;
+
+        a {
+            color      : $categoryColor;
+            margin     : .625rem 1.25rem;
+            font-size  : 1.125rem;
+            font-weight: bold;
+
+            &.active {
+                color: $blue;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) {
+    .side-bar {
+        margin-top: 1em;
+
+        h5 {border-top: 1px solid $categoryColor;}
+
+        .category {@include flexFlow(row);}
+    }
+}
+
+@media (min-width: 768px) {
+    .side-bar {
+        h5 {border-top: none;}
+
+        .category {@include flexFlow(column);}
+    }
+}
+
+@media (min-width: 992px) {
+    .side-bar {
+        margin-top: 12.5em;
+    }
+}

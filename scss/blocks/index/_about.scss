@@ -1,7 +1,6 @@
 .about {
     @include flexAlign(center, center);
     @include flexFlow(row);
-    padding: 5em 0;
 
     .information {
         @include flexAlign(space-between, center);

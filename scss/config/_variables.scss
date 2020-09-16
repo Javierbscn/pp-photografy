@@ -6,11 +6,14 @@
     --boxShadow2   : 0 0 5px 3px #ccc;
     --boxShadow3   : 0 0 3px 0 #dedede;
     --borderRadius : 5px;
+    --searchBar    : #c4c4c4;
     --black        : #000;
     --blue         : rgba(74, 198, 223, 0.94);
+    --errorForm    : rgba(223, 74, 74, 0.94);
     --letterSpacing: 1px;
     --textHeader   : #444;
     --textParagraph: #696969;
+    --categoryColor: #8f8f8f;
     --opacity      : .4;
 }
 
@@ -22,7 +25,10 @@ $boxShadow3   : var(--boxShadow3);
 $borderRadius : var(--borderRadius);
 $black        : var(--black);
 $blue         : var(--blue);
+$errorForm    : var(--errorForm);
+$searchBar    : var(--searchBar);
 $letterSpacing: var(--letterSpacing);
 $textHeader   : var(--textHeader);
 $textParagraph: var(--textParagraph);
+$categoryColor: var(--categoryColor);
 $opacity      : var(--opacity);

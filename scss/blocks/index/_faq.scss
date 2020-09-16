@@ -1,4 +1,4 @@
-.faq {
+#faq {
     @include flexAlign(center, center);
     @include flexFlow(column);
     background: img('bg-faq.jpg') no-repeat;
