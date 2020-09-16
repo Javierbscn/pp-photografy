@@ -1,3 +1,3 @@
 # pp-photografy
 Simulación de una web de agencia fotográfica
-Este es una web simulando ser de un agencia o local de fotografía. Es una web estática, realizada con HTML, CSS y Flexbox principalmente.
+Esta web simula ser de una agencia o local de fotografía. Es un sitio web realizado con HTML, Sass, Flexbox y Grid, JavaScript, ScrollReveal, Muurijs, Validator y JQuery.
