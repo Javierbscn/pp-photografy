@@ -1,5 +1,5 @@
 #form-area {
-    @include flexAlign(space-around, center);
+    @include flexAlign(space-evenly, center);
     @include flexFlow(row);
     margin-bottom: 1rem;
 
