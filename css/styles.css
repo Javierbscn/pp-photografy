@@ -82,6 +82,27 @@ h1, h2, h3, h4 {
   color: var(--blue);
 }
 
+@media (min-width: 320px) {
+  .header {
+    flex-flow: column wrap;
+    width: 100vw;
+    padding: 1em;
+    position: initial;
+  }
+  .header .menu a {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0.75em 3.5em;
+    position: fixed;
+  }
+}
 .banner .cta {
   background-color: var(--black);
   padding: 8.75em 3em;
@@ -159,6 +180,61 @@ h1, h2, h3, h4 {
   box-shadow: var(--boxShadow2);
 }
 
+@media (min-width: 320px) {
+  .banner .cta {
+    padding: 2em 0.5em;
+  }
+  .banner .cta h1 {
+    font-size: 3em;
+  }
+  .banner .cta p {
+    width: 80%;
+  }
+  .banner .cards .card {
+    width: 90vw;
+  }
+  .banner .cards .card img {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .banner .cta {
+    padding: 3em 0.5em;
+  }
+  .banner .cards .card {
+    width: 80vw;
+  }
+}
+@media (min-width: 992px) {
+  .banner .cta {
+    padding: 6em 2em;
+  }
+  .banner .cta p {
+    width: 60%;
+  }
+  .banner .cards {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .banner .cards .card {
+    width: 30vw;
+  }
+}
+@media (min-width: 1200px) {
+  .banner .cta {
+    padding: 8.75em 3em;
+  }
+  .banner .cta h1 {
+    font-size: 3.5em;
+  }
+  .banner .cta p {
+    width: 60%;
+  }
+  .banner .cards .card {
+    width: 360px;
+  }
+}
 .products,
 .wrap,
 .product-data,
@@ -242,6 +318,51 @@ h1, h2, h3, h4 {
   transform: scale(1.1, 1.1);
 }
 
+@media (min-width: 320px) {
+  .products h2 {
+    font-size: 3em;
+  }
+  .products > p {
+    padding: 1.1em;
+  }
+  .products .wrap {
+    flex-flow: column wrap;
+  }
+  .products .wrap .product {
+    width: 80vw;
+  }
+  .products .wrap .product .wrap {
+    flex-flow: row wrap;
+  }
+  .products .more-products {
+    align-self: center;
+  }
+}
+@media (min-width: 768px) {
+  .products h2 {
+    font-size: 3.5em;
+  }
+  .products .wrap {
+    flex-flow: row wrap;
+  }
+  .products .wrap .product {
+    width: 40vw;
+  }
+}
+@media (min-width: 1200px) {
+  .products h2 {
+    font-size: 4em;
+  }
+  .products p {
+    padding: 1em 0;
+  }
+  .products .wrap .product {
+    width: 25%;
+  }
+  .products .wrap .product .wrap {
+    justify-content: space-between;
+  }
+}
 .about {
   display: flex;
   justify-content: center;
@@ -284,6 +405,47 @@ h1, h2, h3, h4 {
   transform: scale(1.1, 1.1);
 }
 
+@media (min-width: 320px) {
+  .about {
+    flex-flow: column wrap;
+    padding: 3em 0 0;
+  }
+  .about .information {
+    width: 80vw;
+    padding: 0;
+  }
+
+  iframe {
+    width: 90vw;
+    height: 60vh;
+  }
+}
+@media (min-width: 768px) {
+  iframe {
+    width: 85vw;
+    height: 70vh;
+  }
+}
+@media (min-width: 992px) {
+  iframe {
+    width: 80vw;
+    height: 80vh;
+  }
+}
+@media (min-width: 1200px) {
+  .about {
+    flex-flow: row wrap;
+    padding: 5em 0 0;
+  }
+  .about iframe {
+    width: 560px;
+    height: 320px;
+  }
+  .about .information {
+    width: 40%;
+    padding: 0.5em 0 0 2.7em;
+  }
+}
 #faq {
   display: flex;
   justify-content: center;
@@ -321,6 +483,48 @@ h1, h2, h3, h4 {
   line-height: 1.25em;
 }
 
+@media (min-width: 320px) {
+  #faq {
+    padding: 1.2em;
+    margin: 5em 0 0;
+  }
+  #faq h4 {
+    font-size: 2.5em;
+  }
+  #faq p {
+    font-size: 1em;
+  }
+  #faq .questions {
+    flex-flow: column wrap;
+    margin: 0.5em;
+  }
+  #faq .questions .question {
+    width: 75vw;
+  }
+}
+@media (min-width: 768px) {
+  #faq {
+    padding: 1.75em;
+  }
+}
+@media (min-width: 1200px) {
+  #faq {
+    padding: 2.5em;
+  }
+  #faq h4 {
+    font-size: 3em;
+  }
+  #faq p {
+    font-size: 1.1em;
+  }
+  #faq .questions {
+    flex-flow: row wrap;
+    margin: 2.5em;
+  }
+  #faq .questions .question {
+    width: 40%;
+  }
+}
 .contact {
   display: flex;
   justify-content: center;
@@ -375,6 +579,79 @@ h1, h2, h3, h4 {
   }
 }
 
+@media (min-width: 320px) {
+  .contact {
+    flex-flow: column wrap;
+    padding: 1.5em 0;
+  }
+  .contact .contact-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    padding: 1em 0;
+  }
+  .contact .contact-data h4 {
+    font-size: 2.5em;
+  }
+  .contact .contact-data .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+  .contact .contact-data .container h5 {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .contact {
+    padding: 2.5em 0;
+  }
+  .contact .contact-data {
+    width: 90vw;
+    padding: 1em 0;
+  }
+  .contact .contact-data h4 {
+    font-size: 3.5em;
+  }
+  .contact .contact-data .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-flow: row wrap;
+  }
+}
+@media (min-width: 1200px) {
+  .contact {
+    flex-flow: row wrap;
+    padding: 3.5em 0;
+  }
+  .contact .map iframe {
+    width: 500px;
+    height: 450px;
+  }
+  .contact .contact-data {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column wrap;
+    width: 45%;
+    padding: 1em 0;
+  }
+  .contact .contact-data h4 {
+    font-size: 4em;
+  }
+  .contact .contact-data .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    flex-flow: row wrap;
+  }
+  .contact .contact-data .container h5 {
+    font-size: 1.2em;
+  }
+}
 .footer {
   display: flex;
   justify-content: center;
@@ -738,268 +1015,6 @@ h1, h2, h3, h4 {
   }
   #form-area .wrap-flex form .form-info {
     font-size: 0.75rem;
-  }
-}
-@media (min-width: 320px) {
-  .header {
-    flex-flow: column wrap;
-    width: 100vw;
-    padding: 1em;
-    position: initial;
-  }
-  .header .menu a {
-    display: inline-block;
-  }
-
-  .banner .cta {
-    padding: 2em 0.5em;
-  }
-  .banner .cta h1 {
-    font-size: 3em;
-  }
-  .banner .cta p {
-    width: 80%;
-  }
-  .banner .cards .card {
-    width: 90vw;
-  }
-  .banner .cards .card img {
-    width: 100%;
-  }
-
-  .products h2 {
-    font-size: 3em;
-  }
-  .products > p {
-    padding: 1.1em;
-  }
-  .products .wrap {
-    flex-flow: column wrap;
-  }
-  .products .wrap .product {
-    width: 80vw;
-  }
-  .products .wrap .product .wrap {
-    flex-flow: row wrap;
-  }
-  .products .more-products {
-    align-self: center;
-  }
-
-  .about {
-    flex-flow: column wrap;
-    padding: 3em 0 0;
-  }
-  .about .information {
-    width: 80vw;
-    padding: 0;
-  }
-
-  #faq {
-    padding: 1.2em;
-    margin: 5em 0 0;
-  }
-  #faq h4 {
-    font-size: 2.5em;
-  }
-  #faq p {
-    font-size: 1em;
-  }
-  #faq .questions {
-    flex-flow: column wrap;
-    margin: 0.5em;
-  }
-  #faq .questions .question {
-    width: 75vw;
-  }
-
-  iframe {
-    width: 90vw;
-    height: 60vh;
-  }
-
-  .contact {
-    flex-flow: column wrap;
-    padding: 1.5em 0;
-  }
-  .contact .contact-data {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90vw;
-    padding: 1em 0;
-  }
-  .contact .contact-data h4 {
-    font-size: 2.5em;
-  }
-  .contact .contact-data .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
-  }
-  .contact .contact-data .container h5 {
-    text-align: center;
-  }
-}
-@media (min-width: 768px) {
-  .banner .cta {
-    padding: 3em 0.5em;
-  }
-  .banner .cards .card {
-    width: 80vw;
-  }
-
-  .products h2 {
-    font-size: 3.5em;
-  }
-  .products .wrap {
-    flex-flow: row wrap;
-  }
-  .products .wrap .product {
-    width: 40vw;
-  }
-
-  #faq {
-    padding: 1.75em;
-  }
-
-  iframe {
-    width: 85vw;
-    height: 70vh;
-  }
-
-  .contact {
-    padding: 2.5em 0;
-  }
-  .contact .contact-data {
-    width: 90vw;
-    padding: 1em 0;
-  }
-  .contact .contact-data h4 {
-    font-size: 3.5em;
-  }
-  .contact .contact-data .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    flex-flow: row wrap;
-  }
-}
-@media (min-width: 992px) {
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-flow: row wrap;
-    padding: 0.75em 3.5em;
-    position: fixed;
-  }
-
-  .banner .cta {
-    padding: 6em 2em;
-  }
-  .banner .cta p {
-    width: 60%;
-  }
-  .banner .cards {
-    display: flex;
-    justify-content: center;
-    align-items: baseline;
-  }
-  .banner .cards .card {
-    width: 30vw;
-  }
-
-  iframe {
-    width: 80vw;
-    height: 80vh;
-  }
-}
-@media (min-width: 1200px) {
-  .banner .cta {
-    padding: 8.75em 3em;
-  }
-  .banner .cta h1 {
-    font-size: 3.5em;
-  }
-  .banner .cta p {
-    width: 60%;
-  }
-  .banner .cards .card {
-    width: 360px;
-  }
-
-  .products h2 {
-    font-size: 4em;
-  }
-  .products p {
-    padding: 1em 0;
-  }
-  .products .wrap .product {
-    width: 25%;
-  }
-  .products .wrap .product .wrap {
-    justify-content: space-between;
-  }
-
-  .about {
-    flex-flow: row wrap;
-    padding: 5em 0 0;
-  }
-  .about iframe {
-    width: 560px;
-    height: 320px;
-  }
-  .about .information {
-    width: 40%;
-    padding: 0.5em 0 0 2.7em;
-  }
-
-  #faq {
-    padding: 2.5em;
-  }
-  #faq h4 {
-    font-size: 3em;
-  }
-  #faq p {
-    font-size: 1.1em;
-  }
-  #faq .questions {
-    flex-flow: row wrap;
-    margin: 2.5em;
-  }
-  #faq .questions .question {
-    width: 40%;
-  }
-
-  .contact {
-    flex-flow: row wrap;
-    padding: 3.5em 0;
-  }
-  .contact .map iframe {
-    width: 500px;
-    height: 450px;
-  }
-  .contact .contact-data {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-flow: column wrap;
-    width: 45%;
-    padding: 1em 0;
-  }
-  .contact .contact-data h4 {
-    font-size: 4em;
-  }
-  .contact .contact-data .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    flex-flow: row wrap;
-  }
-  .contact .contact-data .container h5 {
-    font-size: 1.2em;
   }
 }
 

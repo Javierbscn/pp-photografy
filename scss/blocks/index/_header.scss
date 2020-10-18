@@ -25,3 +25,25 @@
         }
     }
 }
+
+@include mobile {
+    .header {
+        @include flexFlow(column);
+        width   : 100vw;
+        padding : 1em;
+        position: initial;
+
+        .menu {
+            a {display: inline-block;}
+        }
+    }
+}
+
+@include laptop {
+    .header {
+        @include flexAlign(space-between, center);
+        @include flexFlow(row);
+        padding : .75em 3.5em;
+        position: fixed;
+    }
+}

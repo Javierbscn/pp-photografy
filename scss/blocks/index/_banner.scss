@@ -85,3 +85,65 @@
         }
     }
 }
+
+@include mobile {
+    .banner {
+        .cta {
+            padding: 2em .5em;
+
+            h1 {font-size: 3em;}
+
+            p {width: 80%;}
+        }
+
+        .cards {
+            .card {
+                width: 90vw;
+
+                img {width: 100%;}
+            }
+        }
+    }
+}
+
+@include tablet {
+    .banner {
+        .cta {padding: 3em .5em;}
+
+        .cards {
+            .card {width: 80vw;}
+        }
+    }
+}
+
+@include laptop {
+    .banner {
+        .cta {
+            padding: 6em 2em;
+
+            p {width: 60%;}
+        }
+
+        .cards {
+            @include flexAlign(center, baseline);
+
+            .card {width: 30vw;}
+        }
+    }
+}
+
+@include desktop {
+    .banner {
+        .cta {
+            padding: 8.75em 3em;
+
+            h1 {font-size: 3.5em;}
+
+            p {width: 60%;}
+        }
+
+        .cards {
+            .card {width: 360px;}
+        }
+    }
+}

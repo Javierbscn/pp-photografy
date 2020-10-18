@@ -95,3 +95,51 @@
         }
     }
 }
+
+@include mobile {
+    .products {
+        h2 {font-size: 3em;}
+
+        &>p {padding: 1.1em;}
+
+        .wrap {
+            @include flexFlow(column);
+
+            .product {
+                width: 80vw;
+
+                .wrap {@include flexFlow(row);}
+            }
+        }
+
+        .more-products {align-self: center;}
+    }
+}
+
+@include tablet {
+    .products {
+        h2 {font-size: 3.5em;}
+
+        .wrap {
+            @include flexFlow(row);
+
+            .product {width: 40vw;}
+        }
+    }
+}
+
+@include desktop {
+    .products {
+        h2 {font-size: 4em;}
+
+        p {padding: 1em 0;}
+
+        .wrap {
+            .product {
+                width: 25%;
+
+                .wrap {justify-content: space-between;}
+            }
+        }
+    }
+}

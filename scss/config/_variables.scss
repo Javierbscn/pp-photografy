@@ -32,3 +32,8 @@ $textHeader   : var(--textHeader);
 $textParagraph: var(--textParagraph);
 $categoryColor: var(--categoryColor);
 $opacity      : var(--opacity);
+// Breakpoints
+$screenSmall  : 320px;
+$screenMedium : 768px;
+$screenLarge  : 992px;
+$screenExtralarge: 1200px;
