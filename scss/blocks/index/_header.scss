@@ -6,7 +6,7 @@
     width        : 100vw;
     box-sizing   : border-box;
     border-bottom: 1px solid $searchBar;
-    background   : $white1;
+    background   : $white;
     z-index      : 10;
     top          : 0;
 
@@ -23,5 +23,27 @@
                 color: $blue;
             }
         }
+    }
+}
+
+@include mobile {
+    .header {
+        @include flexFlow(column);
+        width   : 100vw;
+        padding : 1em;
+        position: initial;
+
+        .menu {
+            a {display: inline-block;}
+        }
+    }
+}
+
+@include laptop {
+    .header {
+        @include flexAlign(space-between, center);
+        @include flexFlow(row);
+        padding : .75em 3.5em;
+        position: fixed;
     }
 }

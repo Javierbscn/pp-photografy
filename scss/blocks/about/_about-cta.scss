@@ -1,6 +1,6 @@
 #about-cta.contact {
     background   : $textHeader;
-    border-bottom: 1px solid $white2;
+    border-bottom: 1px solid $light;
     text-align   : center;
 
     .contact-data {
@@ -10,7 +10,7 @@
             font-size  : 2.5rem;
             font-weight: normal;
             margin     : 0;
-            color      : $white1;
+            color      : $white;
         }
 
         .container {
@@ -22,9 +22,9 @@
     }
     
     p {
-        color: $white1;
+        color: $white;
         a {
-            color          : $white1;
+            color          : $white;
             text-decoration: underline;
             &:hover {color: $blue;}
         }

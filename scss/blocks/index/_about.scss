@@ -40,3 +40,51 @@
         }
     }
 }
+
+@include mobile {
+    .about {
+        @include flexFlow(column);
+        padding: 3em 0 0;
+
+        .information {
+            width  : 80vw;
+            padding: 0;
+        }
+    }
+
+    iframe {
+        width : 90vw;
+        height: 60vh;
+    }
+}
+
+@include tablet {
+    iframe {
+        width : 85vw;
+        height: 70vh;
+    }
+}
+
+@include laptop {
+    iframe {
+        width : 80vw;
+        height: 80vh;
+    }
+}
+
+@include desktop {
+    .about {
+        @include flexFlow(row);
+        padding: 5em 0 0;
+
+        iframe {
+            width : 560px;
+            height: 320px;
+        }
+
+        .information {
+            width  : 40%;
+            padding: .5em 0 0 2.7em;
+        }
+    }
+}

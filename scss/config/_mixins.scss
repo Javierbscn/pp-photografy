@@ -1,5 +1,5 @@
 @function img($file) {
-    @return url('../img/'+ $file);
+    @return url('../../assets/img/' + $file);
 }
 
 @mixin flexAlign($jcontent, $alcontent) {
@@ -10,4 +10,29 @@
 
 @mixin flexFlow($direction) {
     flex-flow: $direction wrap;
+}
+
+// Responsive
+@mixin mobile() {
+    @media (min-width: $screenSmall) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (min-width: $screenMedium) {
+        @content;
+    }
+}
+
+@mixin laptop() {
+    @media (min-width: $screenLarge) {
+        @content;
+    }
+}
+
+@mixin desktop() {
+    @media (min-width: $screenExtralarge) {
+        @content;
+    }
 }

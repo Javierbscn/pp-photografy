@@ -24,13 +24,13 @@
 
         h1 {
             font-size     : 3.5em;
-            color         : $white1;
+            color         : $white;
             padding       : 1em;
             letter-spacing: $letterSpacing;
         }
 
         p {
-            color     : $white2;
+            color     : $light;
             padding   : 1.5em;
             width     : 50%;
             text-align: center;
@@ -39,9 +39,9 @@
         .button {
             background    : transparent;
             display       : inline-block;
-            border        : 1px solid $white1;
+            border        : 1px solid $white;
             border-radius : $borderRadius;
-            color         : $white1;
+            color         : $white;
             padding       : 1em 2em;
             font-weight   : bold;
             font-size     : 14px;
@@ -82,6 +82,68 @@
             &:hover {
                 box-shadow: $boxShadow2;
             }
+        }
+    }
+}
+
+@include mobile {
+    .banner {
+        .cta {
+            padding: 2em .5em;
+
+            h1 {font-size: 3em;}
+
+            p {width: 80%;}
+        }
+
+        .cards {
+            .card {
+                width: 90vw;
+
+                img {width: 100%;}
+            }
+        }
+    }
+}
+
+@include tablet {
+    .banner {
+        .cta {padding: 3em .5em;}
+
+        .cards {
+            .card {width: 80vw;}
+        }
+    }
+}
+
+@include laptop {
+    .banner {
+        .cta {
+            padding: 6em 2em;
+
+            p {width: 60%;}
+        }
+
+        .cards {
+            @include flexAlign(center, baseline);
+
+            .card {width: 30vw;}
+        }
+    }
+}
+
+@include desktop {
+    .banner {
+        .cta {
+            padding: 8.75em 3em;
+
+            h1 {font-size: 3.5em;}
+
+            p {width: 60%;}
+        }
+
+        .cards {
+            .card {width: 360px;}
         }
     }
 }
