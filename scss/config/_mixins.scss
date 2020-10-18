@@ -1,5 +1,5 @@
 @function img($file) {
-    @return url('../img/'+ $file);
+    @return url('../img/' + $file);
 }
 
 @mixin flexAlign($jcontent, $alcontent) {

@@ -8,7 +8,7 @@
 .products {
     @include flexFlow(column);
     padding   : 1.5em 0;
-    background: $white2;
+    background: $light;
 
     h2 {
         font-size     : 4em;
@@ -29,7 +29,7 @@
             width        : 25%;
             padding      : .75em;
             margin       : .75em;
-            background   : $white1;
+            background   : $white;
             border-radius: $borderRadius;
             box-shadow   : $boxShadow1 inset;
 
@@ -67,13 +67,13 @@
                 cursor        : pointer;
                 border        : 1px solid $blue;
                 border-radius : $borderRadius;
-                background    : $white1;
+                background    : $white;
                 text-transform: uppercase;
                 transition    : all .3s;
 
                 &:hover {
                     background: $blue;
-                    color     : $white1;
+                    color     : $white;
                 }
             }
         }
@@ -82,7 +82,7 @@
 
     .more-products {
         display      : inline-block;
-        color        : $white1;
+        color        : $white;
         font-size    : 1.1em;
         background   : $blue;
         padding      : .5em 1.5em;

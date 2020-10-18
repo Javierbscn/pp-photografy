@@ -1,5 +1,3 @@
-'use strict';
-
 ScrollReveal().reveal('.cta', { delay: 500 });
 ScrollReveal().reveal('.cards', { delay: 500 });
 ScrollReveal().reveal('#products', { delay: 500 });

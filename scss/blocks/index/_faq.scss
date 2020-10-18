@@ -5,13 +5,13 @@
     background-size: cover;
 
     h4 {
-        color: $white1;
+        color: $white;
         padding: .65em 0;
         letter-spacing: $letterSpacing;
     }
 
     p {
-        color: $white2;
+        color: $light;
     }
 
     .questions {
@@ -21,7 +21,7 @@
             padding: 1em;   
 
             .title {
-                color: $white1;
+                color: $white;
                 font-size: 1em;
                 margin: 1em 0;
                 letter-spacing: $letterSpacing;
@@ -30,7 +30,7 @@
             }
 
             .answer {
-                color: $white2;
+                color: $light;
                 line-height  : 1.25em;
             }
         }

@@ -24,13 +24,13 @@
 
         h1 {
             font-size     : 3.5em;
-            color         : $white1;
+            color         : $white;
             padding       : 1em;
             letter-spacing: $letterSpacing;
         }
 
         p {
-            color     : $white2;
+            color     : $light;
             padding   : 1.5em;
             width     : 50%;
             text-align: center;
@@ -39,9 +39,9 @@
         .button {
             background    : transparent;
             display       : inline-block;
-            border        : 1px solid $white1;
+            border        : 1px solid $white;
             border-radius : $borderRadius;
-            color         : $white1;
+            color         : $white;
             padding       : 1em 2em;
             font-weight   : bold;
             font-size     : 14px;
