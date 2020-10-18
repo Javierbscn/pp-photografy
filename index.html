@@ -7,20 +7,11 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <title>Web de Fotografía</title>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo"><img src="img/logo.png" alt="logotype"></div>
-        <nav id="nav">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="products.html">Productos</a></li>
-                <li><a href="about.html">Sobre nostros</a></li>
-                <li><a href="index.html#faqS">FAQ</a></li>
-                <li><a href="contact.html">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div data-include="assets/templates/header.html"></div>
+
     <section class="banner">
         <div class="cta">
             <h1>¿Te interesa la fotografía?</h1>
@@ -29,15 +20,15 @@
         </div>
         <div class="cards">
             <div class="card">
-                <img src="img/card1.jpg" alt="paisaje atardecer">
+                <img src="../../assets/img/card1.jpg" alt="paisaje atardecer">
                 <p>Hay paisajes que es mejor no guardar solo en la memoria, ¡No los dejes pasar!</p>
             </div>
             <div class="card">
-                <img src="img/card2.jpg" alt="dron drone">
+                <img src="../../assets/img/card2.jpg" alt="dron drone">
                 <p>¡Alcanza nuevos horizontes con tu propio dron y captura imágenes inigualables!</p>
             </div>
             <div class="card">
-                <img src="img/card3.jpg" alt="alegria compartir amigos">
+                <img src="../../assets/img/card3.jpg" alt="alegria compartir amigos">
                 <p>¡Retratar esos momentos tan especiales te permitirán recordarlos con mucha más claridad!</p>
             </div>
         </div>
@@ -47,7 +38,7 @@
         <p>Comprueba por ti mismo cómo un solo articulo puede cambiarte la vida con la mejor calidad posible</p>
         <div class="wrap">
             <div class="product">
-                <img src="img/product1.jpg" alt="camara">
+                <img src="../../assets/img/product1.jpg" alt="camara">
                 <div class="wrap">
                     <section class="product-data">
                         <h3>Producto 1</h3>
@@ -60,7 +51,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="img/product2.jpg" alt="camara">
+                <img src="../../assets/img/product2.jpg" alt="camara">
                 <div class="wrap">
                     <section class="product-data">
                         <h3>Producto 2</h3>
@@ -73,7 +64,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="img/product3.jpg" alt="camara">
+                <img src="../../assets/img/product3.jpg" alt="camara">
                 <div class="wrap">
                     <section class="product-data">
                         <h3>Producto 3</h3>
@@ -86,7 +77,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="img/product4.jpg" alt="dron">
+                <img src="../../assets/img/product4.jpg" alt="dron">
                 <div class="wrap">
                     <section class="product-data">
                         <h3>Producto 4</h3>
@@ -99,7 +90,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="img/product5.jpg" alt="dron">
+                <img src="../../assets/img/product5.jpg" alt="dron">
                 <div class="wrap">
                     <section class="product-data">
                         <h3>Producto 5</h3>
@@ -112,7 +103,7 @@
                 </div>
             </div>
             <div class="product">
-                <img src="img/product6.jpg" alt="dron">
+                <img src="../../assets/img/product6.jpg" alt="dron">
                 <div class="wrap">
                     <section class="product-data">
                         <h3>Producto 6</h3>
@@ -191,18 +182,14 @@
                 </div>
                 <div class="data">
                     <h5>Redes sociales</h5>
-                    <div class="social">
-                        <a href="#"><img src="img/whatsapp.svg" alt="whatsapp"></a>
-                        <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
-                        <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
-                    </div>
+                    <div data-include="assets/templates/social.html"></div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <p>Javier Boscán &copy; 2020 | Empresa ficticia</p>
-    </footer>
+
+    <div data-include="assets/templates/footer.html"></div>
+
     <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="js/index.js"></script>
 </body>

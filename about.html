@@ -6,20 +6,11 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <title>Sobre nosotros | Web de Fotografía</title>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo"><img src="img/logo.png" alt="logotype"></div>
-        <nav id="nav">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="products.html">Productos</a></li>
-                <li><a href="about.html">Sobre nostros</a></li>
-                <li><a href="index.html#faqS">FAQ</a></li>
-                <li><a href="contact.html">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div data-include="assets/templates/header.html"></div>
+
     <section class="about" id="about-us">
         <div class="wrap-flex">
             <div class="information text">
@@ -32,7 +23,7 @@
         </div>
         <div class="wrap-flex">
             <div class="about-img">
-                <img src="img/about-team.jpg" alt="personal equipo">
+                <img src="../../assets/img/about-team.jpg" alt="personal equipo">
             </div>
             <div class="information text">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nemo laborum harum repellat tempora, quis commodi laboriosam nisi eius vero, tenetur nihil labore molestias aliquid. Quaerat deserunt quia laborum repellendus nemo sit eaque veniam aliquid architecto reiciendis, vel quis minus similique recusandae harum officia. A perspiciatis delectus at asperiores est magni ducimus provident eos nulla rem! Corrupti quae placeat sunt porro pariatur adipisci, perferendis dolorem voluptatum nesciunt saepe voluptate odit impedit rerum. Repellendus velit quia odit minima saepe, minus et officiis ratione illo! Placeat quaerat, vel nihil velit voluptates voluptate amet pariatur odio sequi earum necessitatibus. Repudiandae nesciunt porro aperiam eum possimus laboriosam fugit officia dolore optio debitis animi earum similique esse et sunt vel distinctio, aut culpa excepturi unde?</p>
@@ -45,17 +36,12 @@
             <h4>¡Síguenos!</h4>
             <div class="container">
                 <div class="data">
-                    <div class="social">
-                        <a href="#"><img src="img/whatsapp.svg" alt="whatsapp"></a>
-                        <a href="#"><img src="img/instagram.svg" alt="instagram"></a>
-                        <a href="#"><img src="img/facebook.svg" alt="facebook"></a>
-                    </div>
+                    <div data-include="assets/templates/social.html"></div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="footer">
-        <p>Javier Boscán &copy; 2020 | Empresa ficticia</p>
-    </footer>
+    
+    <div data-include="assets/templates/footer.html"></div>
 </body>
 </html>

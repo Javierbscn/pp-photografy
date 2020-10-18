@@ -6,20 +6,11 @@
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
     <title>Productos | Web de Fotografía</title>
+    <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-    <header class="header">
-        <div class="logo"><img src="img/logo.png" alt="logotype"></div>
-        <nav id="nav">
-            <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="products.html">Productos</a></li>
-                <li><a href="about.html">Sobre nostros</a></li>
-                <li><a href="index.html#faqS">FAQ</a></li>
-                <li><a href="contact.html">Contáctanos</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div data-include="assets/templates/header.html"></div>
+
     <div id="grid-container">
         <div id="container" class="products">
             <form>
@@ -28,7 +19,7 @@
             <section class="grid wrap" id="grid">
                 <div class="item product" data-category="cámaras comunes" data-tag="cámaras camaras fotografia fotografica normal comunes">
                     <div class="item-content">
-                        <img src="img/product1.jpg" alt="camara">
+                        <img src="../../assets/img/product1.jpg" alt="camara">
                         <div class="wrap">
                             <section class="product-data">
                                 <h3>Producto 1</h3>
@@ -43,7 +34,7 @@
                 </div>
                 <div class="item product" data-category="cámaras comunes" data-tag="cámaras camaras normal comunes fotografia fotografica">
                     <div class="item-content">
-                        <img src="img/product2.jpg" alt="camara">
+                        <img src="../../assets/img/product2.jpg" alt="camara">
                         <div class="wrap">
                             <section class="product-data">
                                 <h3>Producto 2</h3>
@@ -58,7 +49,7 @@
                 </div>
                 <div class="item product" data-category="cámaras comunes" data-tag="cámaras camaras fotografia fotografica normal comunes">
                     <div class="item-content">
-                        <img src="img/product7.jpg" alt="camara">
+                        <img src="../../assets/img/product7.jpg" alt="camara">
                         <div class="wrap">
                             <section class="product-data">
                                 <h3>Producto 3</h3>
@@ -73,7 +64,7 @@
                 </div>
                 <div class="item product" data-category="cámaras de alta resolución" data-tag="cámaras camaras fotografia fotografica hd 4h alta resolución">
                     <div class="item-content">
-                        <img src="img/product5.jpg" alt="camara">
+                        <img src="../../assets/img/product5.jpg" alt="camara">
                         <div class="wrap">
                             <section class="product-data">
                                 <h3>Producto 4</h3>
@@ -88,7 +79,7 @@
                 </div>
                 <div class="item product" data-category="cámaras de alta resolución" data-tag="cámaras camaras fotografia fotografica hd 4h alta resolución">
                     <div class="item-content">
-                        <img src="img/product3.jpg" alt="camara">
+                        <img src="../../assets/img/product3.jpg" alt="camara">
                         <div class="wrap">
                             <section class="product-data">
                                 <h3>Producto 5</h3>
@@ -103,7 +94,7 @@
                 </div>
                 <div class="item product" data-category="cámaras de alta resolución" data-tag="cámaras camaras fotografia fotografica hd 4h alta resolución">
                     <div class="item-content">
-                        <img src="img/product8.jpg" alt="camara">
+                        <img src="../../assets/img/product8.jpg" alt="camara">
                         <div class="wrap">
                             <section class="product-data">
                                 <h3>Producto 6</h3>
@@ -118,7 +109,7 @@
                 </div>
                 <div class="item product" data-category="drones" data-tag="drones altura panorámica perspectiva">
                     <div class="item-content">
-                        <img src="img/product4.jpg" alt="camara">
+                        <img src="../../assets/img/product4.jpg" alt="camara">
                         <div class="wrap">
                             <section class="product-data">
                                 <h3>Producto 7</h3>
@@ -133,7 +124,7 @@
                 </div>
                 <div class="item product" data-category="drones" data-tag="drones altura panorámica perspectiva">
                     <div class="item-content">
-                        <img src="img/product6.jpg" alt="camara">
+                        <img src="../../assets/img/product6.jpg" alt="camara">
                         <div class="wrap">
                             <section class="product-data">
                                 <h3>Producto 8</h3>
@@ -148,7 +139,7 @@
                 </div>
                 <div class="item product" data-category="drones" data-tag="drones altura panorámica perspectiva">
                     <div class="item-content">
-                        <img src="img/product9.jpg" alt="camara">
+                        <img src="../../assets/img/product9.jpg" alt="camara">
                         <div class="wrap">
                             <section class="product-data">
                                 <h3>Producto 9</h3>
@@ -173,9 +164,9 @@
             </div>
         </aside>
     </div>
-    <footer class="footer">
-        <p>Javier Boscán &copy; 2020 | Empresa ficticia</p>
-    </footer>
+
+    <div data-include="assets/templates/footer.html"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.3/dist/muuri.min.js"></script>
     <script type="text/javascript" src="js/products.js"></script>
